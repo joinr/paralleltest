@@ -1,4 +1,5 @@
 {:deps {paralleltest {:local/root "./target/tst.jar"}
         org.clojure/clojure  {:mvn/version "1.10.1"}
         org.clojure/core.async {:mvn/version "0.4.490"}}
- :jvm-opts ["-Xmn2g" "-Xmx4g" "-XX:MinTLABSize=1m"]}
+ :jvm-opts ["-Xmx4g"]
+ :aliases {:single-process {:jvm-opts ["-Xmx2g"]}}}
