@@ -1,0 +1,95 @@
+* paralleltest
+
+A Clojure library designed to ... well, that part is up to you.
+
+** Usage
+
+Right now, the basic workloads and tests are in paralleltest.core.
+
+I have, however, included a deps.edn profile, and the accompanying script.clj 
+and parallel.sh which allow for isolated processes running the same
+large map workload on a single thread.
+
+#+BEGIN_SRC bash
+./parallel.sh 1
+"Elapsed time: 462.58391 msecs"
+all done
+./parallel.sh 60
+"Elapsed time: 1116.737751 msecs"
+"Elapsed time: 1016.454045 msecs"
+"Elapsed time: 1076.985545 msecs"
+"Elapsed time: 978.356228 msecs"
+"Elapsed time: 1211.605311 msecs"
+"Elapsed time: 1307.376725 msecs"
+"Elapsed time: 1225.595322 msecs"
+"Elapsed time: 1355.801757 msecs"
+"Elapsed time: 1324.009635 msecs"
+"Elapsed time: 1230.12454 msecs"
+"Elapsed time: 1246.459484 msecs"
+"Elapsed time: 1506.477076 msecs"
+"Elapsed time: 1367.385763 msecs"
+"Elapsed time: 1168.740792 msecs"
+"Elapsed time: 1444.873497 msecs"
+"Elapsed time: 1188.176865 msecs"
+"Elapsed time: 1081.205271 msecs"
+"Elapsed time: 1174.863403 msecs"
+"Elapsed time: 1397.103549 msecs"
+"Elapsed time: 1433.08342 msecs"
+"Elapsed time: 1284.172972 msecs"
+"Elapsed time: 1194.119659 msecs"
+"Elapsed time: 1364.182769 msecs"
+"Elapsed time: 1351.336779 msecs"
+"Elapsed time: 1215.590058 msecs"
+"Elapsed time: 1513.730273 msecs"
+"Elapsed time: 1442.836293 msecs"
+"Elapsed time: 1411.043134 msecs"
+"Elapsed time: 1536.54688 msecs"
+"Elapsed time: 1379.658698 msecs"
+"Elapsed time: 1287.0453 msecs"
+"Elapsed time: 1476.876027 msecs"
+"Elapsed time: 1340.967626 msecs"
+"Elapsed time: 1507.132193 msecs"
+"Elapsed time: 1426.411811 msecs"
+"Elapsed time: 1502.472747 msecs"
+"Elapsed time: 1457.325852 msecs"
+"Elapsed time: 1409.829095 msecs"
+"Elapsed time: 1667.176721 msecs"
+"Elapsed time: 1353.625284 msecs"
+"Elapsed time: 1613.488218 msecs"
+"Elapsed time: 1424.818737 msecs"
+"Elapsed time: 1438.528765 msecs"
+"Elapsed time: 1490.227471 msecs"
+"Elapsed time: 1638.050692 msecs"
+"Elapsed time: 1543.994296 msecs"
+"Elapsed time: 1427.131122 msecs"
+"Elapsed time: 1620.747893 msecs"
+"Elapsed time: 1544.726643 msecs"
+"Elapsed time: 1692.664819 msecs"
+"Elapsed time: 1462.015344 msecs"
+"Elapsed time: 1632.019846 msecs"
+"Elapsed time: 1478.563031 msecs"
+"Elapsed time: 1622.999268 msecs"
+"Elapsed time: 1428.194073 msecs"
+"Elapsed time: 1368.219596 msecs"
+"Elapsed time: 1620.441577 msecs"
+"Elapsed time: 1461.154846 msecs"
+"Elapsed time: 1483.726435 msecs"
+"Elapsed time: 1512.600078 msecs"
+all done
+
+#+END_SRC
+
+** License
+
+Copyright © 2020 FIXME
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+This Source Code may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License, v. 2.0 are satisfied: GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or (at your
+option) any later version, with the GNU Classpath Exception which is available
+at https://www.gnu.org/software/classpath/license.html.
